@@ -1,23 +1,42 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import toast, { Toaster } from 'react-hot-toast';
+
+const notify = () => toast('Alguien me dijo que no has hecho tu lección!', {
+  icon: '🦉'
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className='App'>
+         <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+        <img src='https://media1.giphy.com/media/YT1yl7jJTI04lygf4s/giphy.gif?cid=6c09b95226006ca0952f31fd4a189ab8b8e5992f49f3558d&ep=v1_internal_gifs_gifId&rid=giphy.gif&ct=s' className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <br></br>
+          <br></br>
+          <br></br>
+          <button className='btn btn-primary' onClick={notify}>Duolingo, eres tú?</button>
+          <Toaster />
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>  
+          <br></br>
+          
+          <br></br>  
+          <br></br>
+
+        <iframe width="685" height="385" src="https://www.youtube.com/embed/enup62u1LEk?autoplay=1" title="La Oreja de Van Gogh  — Rosas [Letra]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
   );
 }
