@@ -6,6 +6,8 @@ import toast, { Toaster } from 'react-hot-toast';
 
 async function juntos() {
     notify();
+    requestNotif();
+    sendNotification();
     await new Promise(resolve => setTimeout(resolve, 11000));
     sendNotification();
 };
