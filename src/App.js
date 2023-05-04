@@ -45,7 +45,7 @@ function App() {
           <br></br>
           <br></br>
           <br></br>
-          <button className='btn btn-primary' onClick={juntos}>Duolingo, eres tú?</button>
+          <button className='btn btn-primary' onClick={juntos}>Duolingo, it's you?</button>
           <Toaster />
         </p>
           <br></br>
