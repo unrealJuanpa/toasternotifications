@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/toasternotifications/static/css/main.a76ea779.css",
+    "main.js": "/toasternotifications/static/js/main.8103fa03.js",
+    "static/js/787.480c7e56.chunk.js": "/toasternotifications/static/js/787.480c7e56.chunk.js",
+    "static/media/logo.svg": "/toasternotifications/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/toasternotifications/index.html",
+    "main.a76ea779.css.map": "/toasternotifications/static/css/main.a76ea779.css.map",
+    "main.8103fa03.js.map": "/toasternotifications/static/js/main.8103fa03.js.map",
+    "787.480c7e56.chunk.js.map": "/toasternotifications/static/js/787.480c7e56.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a76ea779.css",
+    "static/js/main.8103fa03.js"
+  ]
+}
