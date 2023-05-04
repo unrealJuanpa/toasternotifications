@@ -4,9 +4,29 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import toast, { Toaster } from 'react-hot-toast';
 
+async function juntos() {
+    notify();
+    await new Promise(resolve => setTimeout(resolve, 11000));
+    sendNotification();
+};
+
 const notify = () => toast('Alguien me dijo que no has hecho tu lección!', {
   icon: '🦉'
 });
+
+function requestNotif() {
+  if ('Notification' in window) {
+    Notification.requestPermission();
+  }
+}
+
+function sendNotification() {
+  if (Notification.permission === 'granted') {
+    new Notification('Duolingo', {
+      body: 'Aún sigo esperando....'
+    });
+  }
+}
 
 function App() {
   return (
@@ -23,7 +43,7 @@ function App() {
           <br></br>
           <br></br>
           <br></br>
-          <button className='btn btn-primary' onClick={notify}>Duolingo, eres tú?</button>
+          <button className='btn btn-primary' onClick={juntos}>Duolingo, eres tú?</button>
           <Toaster />
         </p>
           <br></br>
